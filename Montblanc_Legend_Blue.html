@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scentopia - Montblanc - Legend - Blue</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QXM4Y1GB48"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-QXM4Y1GB48');
+  </script>
+  <!-- End Google Analytics -->
+   
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Oxygen', sans-serif;
+      background-color: #ffffff;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background: linear-gradient(90deg, #EFEDDA, #A1A09B);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    }
+    .navbar .logo {
+      font-size: 22px;
+      font-weight: bold;
+      color: #080707;
+    }
+    .navbar .buttons a {
+      color: #080707;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 600;
+    }
+    .navbar .buttons a:hover {
+      text-decoration: underline;
+      color: #333333;
+    }
+
+    /* Product Section */
+    .product-section {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 50px 20px;
+      gap: 40px;
+    }
+    .product-image {
+      flex: 1;
+      text-align: center;
+    }
+    .product-image img {
+      max-width: 100%;
+      border: 2px solid #080707;
+      border-radius: 8px;
+    }
+    .product-details {
+      flex: 1;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      border: 2px solid #080707;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .product-details h1 {
+      margin: 0 0 10px;
+      font-size: 28px;
+      color: rgb(110, 111, 107);
+    }
+    .product-details .price {
+      font-size: 22px;
+      color: #080707;
+      margin: 10px 0;
+    }
+
+    .actions {
+      margin-top: 20px;
+    }
+
+    /* Buttons */
+    .product-details button {
+      padding: 12px 20px;
+      margin-right: 10px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+      border: 2px solid #080707;
+    }
+    .btn-buy {
+      background-color: #A1A09B;
+      color: #080707;
+    }
+    .btn-buy:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      transform: scale(1.05);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .product-section {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="logo">Scentopia - Infusing Beirut with the aromas of the world</div>
+    <div class="buttons">
+      <a href="index.html">STOCK</a>
+    </div>
+  </nav>
+
+  <section class="product-section">
+    <div class="product-image">
+      <img src="Montblanc_Legend_Blue_pic.jpeg" alt="Montblanc - Legend - Blue">
+    </div>
+
+    <div class="product-details">
+      <h1>Montblanc - Legend - Blue</h1>
+      <div class="price">$30.00</div>
+
+      <p><strong>Brand:</strong> Montblanc</p>
+      <p><strong>Type:</strong> Parfum</p>
+      <div class="actions">
+        <!-- Scrolls to contact card + highlights it -->
+        <button class="btn-buy" onclick="window.location.href='index.html#contact-card'">
+          Place Order
+        </button>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
